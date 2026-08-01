@@ -12,7 +12,7 @@ export default function Skills() {
             <h3 className="mb-3 text-sm font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
               {group.category}
             </h3>
-            <ul className="flex flex-col gap-2 text-zinc-700 dark:text-zinc-300">
+            <ul className="flex list-disc flex-col gap-2 pl-5 text-zinc-700 dark:text-zinc-300">
               {group.items.map((item) => (
                 <li key={item}>{item}</li>
               ))}

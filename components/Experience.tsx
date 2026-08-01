@@ -9,7 +9,7 @@ export default function Experience() {
       <ol className="flex flex-col gap-8">
         {experience.map((entry) => (
           <li key={`${entry.role}-${entry.org}`} className="flex flex-col gap-1">
-            <div className="flex flex-wrap items-baseline justify-between gap-x-4">
+            <div className="flex flex-wrap items-baseline gap-x-4">
               <h3 className="font-medium text-black dark:text-zinc-50">
                 {entry.role} · {entry.org}
               </h3>

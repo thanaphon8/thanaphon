@@ -10,7 +10,7 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "Frameworks & Platforms",
-    items: ["Flutter", "Django", "Next.js", "Bootstrap"],
+    items: ["Flutter", "Django", "Next.js", "Angular", "Bootstrap"],
   },
   {
     category: "Databases",

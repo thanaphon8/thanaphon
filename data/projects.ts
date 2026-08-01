@@ -26,8 +26,9 @@ export const projects: Project[] = [
     title: "Evaluation System",
     description:
       "A web app for classroom presentations — the instructor opens a room and students join to evaluate whichever team is currently presenting. The instructor gets a summary of each team's overall score along with automated feedback on their strengths and areas to improve, while evaluators can leave comments to help that team do better next time.",
-    tags: [],
+    tags: ["TypeScript", "JavaScript"],
     href: "https://github.com/thanaphon8/PeerScore.git",
+    previewImages: ["/img/21.png", "/img/22.png", "/img/23.png", "/img/24.png"],
     highlights: [
       "Designed and built the UX/UI",
       "Handled front-end and back-end development",
@@ -38,8 +39,9 @@ export const projects: Project[] = [
     title: "Typing Speed Test",
     description:
       "A typing speed test website with support for both English and Thai, including a word bank and hard-mode sentences in each language. The whole app uses a consistent Game Boy-inspired green color theme.",
-    tags: ["MongoDB"],
+    tags: ["TypeScript", "MongoDB"],
     href: "https://github.com/thanaphon8/Typing-Project.git",
+    previewImages: ["/img/31.png", "/img/32.png", "/img/33.png"],
     highlights: [
       "Goes beyond a single end-of-game WPM average by logging every word event (word, correct/incorrect, timestamp), so typing speed can be plotted as a graph over time",
       "Stores typing history and each user's personal best scores in MongoDB",
