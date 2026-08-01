@@ -2,7 +2,7 @@ import { skills } from "@/data/skills";
 
 export default function Skills() {
   return (
-    <section id="skills" className="flex flex-col gap-6 border-t border-black/[.08] py-16 dark:border-white/[.145]">
+    <section id="skills" className="flex scroll-mt-20 flex-col gap-6 border-t border-black/[.08] py-16 dark:border-white/[.145]">
       <h2 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
         Skills
       </h2>
