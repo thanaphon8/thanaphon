@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { projects } from "@/data/projects";
 
 export default function Projects() {
@@ -38,6 +39,23 @@ export default function Projects() {
                 </span>
               ))}
             </div>
+            {project.previewImages && (
+              <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
+                {project.previewImages.map((src, index) => (
+                  <div
+                    key={src}
+                    className="relative aspect-[1920/952] overflow-hidden rounded-lg border border-black/[.08] dark:border-white/[.145]"
+                  >
+                    <Image
+                      src={src}
+                      alt={`${project.title} preview ${index + 1}`}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
           </a>
         ))}
       </div>

@@ -4,6 +4,7 @@ export type Project = {
   tags: string[];
   href: string;
   highlights?: string[];
+  previewImages?: string[];
 };
 
 export const projects: Project[] = [
@@ -13,6 +14,7 @@ export const projects: Project[] = [
       "A web application that helps educators form balanced student teams based on MBTI personality analysis, featuring quiz templates, automated team matching, and real-time room management.",
     tags: ["TypeScript", "JavaScript", "CSS"],
     href: "https://github.com/thanaphon8/FinalProject",
+    previewImages: ["/img/bg1.png", "/img/bg2.png", "/img/bg3.png", "/img/bg4.png"],
     highlights: [
       "Developed and built a web application",
       "Designed and developed UI for all major pages including home, templates, question flow, team view, and result screens",
@@ -35,14 +37,12 @@ export const projects: Project[] = [
   {
     title: "Typing Speed Test",
     description:
-      "A typing speed test web application that measures typing speed and accuracy.",
-    tags: [],
+      "A typing speed test website with support for both English and Thai, including a word bank and hard-mode sentences in each language. The whole app uses a consistent Game Boy-inspired green color theme.",
+    tags: ["MongoDB"],
     href: "https://github.com/thanaphon8/Typing-Project.git",
-  },
-  {
-    title: "To-Do List",
-    description: "A to-do list web application for managing daily tasks.",
-    tags: [],
-    href: "https://github.com/thanaphon8/ToDoListv2.git",
+    highlights: [
+      "Goes beyond a single end-of-game WPM average by logging every word event (word, correct/incorrect, timestamp), so typing speed can be plotted as a graph over time",
+      "Stores typing history and each user's personal best scores in MongoDB",
+    ],
   },
 ];
