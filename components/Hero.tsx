@@ -1,6 +1,25 @@
 import Image from "next/image";
 import { profile } from "@/data/profile";
 
+function renderWithHighlights(text: string, highlights: string[]) {
+  const pattern = new RegExp(
+    `(${highlights.map((h) => h.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`,
+    "g"
+  );
+  return text
+    .split(pattern)
+    .filter(Boolean)
+    .map((part, index) =>
+      highlights.includes(part) ? (
+        <strong key={index} className="font-semibold text-black dark:text-zinc-50">
+          {part}
+        </strong>
+      ) : (
+        <span key={index}>{part}</span>
+      )
+    );
+}
+
 export default function Hero() {
   return (
     <section
@@ -25,8 +44,8 @@ export default function Hero() {
       <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
         {profile.tagline}
       </p>
-      <p className="max-w-xl leading-7 text-zinc-600 dark:text-zinc-400">
-        {profile.bio}
+      <p className="max-w-xl text-left leading-7 text-zinc-600 dark:text-zinc-400">
+        {renderWithHighlights(profile.bio, profile.bioHighlights)}
       </p>
     </section>
   );
