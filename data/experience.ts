@@ -7,23 +7,9 @@ export type ExperienceEntry = {
 
 export const experience: ExperienceEntry[] = [
   {
-    role: "Software Developer",
-    org: "Company Name",
-    period: "2024 — Present",
-    description:
-      "Brief description of your responsibilities and key achievements in this role.",
-  },
-  {
-    role: "Junior Developer",
-    org: "Previous Company",
-    period: "2022 — 2024",
-    description:
-      "Brief description of your responsibilities and key achievements in this role.",
-  },
-  {
     role: "B.Sc. Computer Science",
-    org: "University Name",
-    period: "2018 — 2022",
-    description: "Relevant coursework, honors, or notable projects.",
+    org: "Sisaket Rajabhat University",
+    period: "2023 — Present",
+    description: "Faculty of Liberal Arts and Science · Sisaket, Thailand",
   },
 ];

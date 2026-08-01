@@ -25,7 +25,7 @@ export default function Hero() {
       <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
         {profile.tagline}
       </p>
-      <p className="max-w-md leading-7 text-zinc-600 dark:text-zinc-400">
+      <p className="max-w-xl leading-7 text-zinc-600 dark:text-zinc-400">
         {profile.bio}
       </p>
     </section>

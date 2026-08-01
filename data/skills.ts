@@ -5,15 +5,23 @@ export type SkillCategory = {
 
 export const skills: SkillCategory[] = [
   {
-    category: "Languages",
-    items: ["TypeScript", "JavaScript", "Python", "SQL"],
+    category: "Programming Language",
+    items: ["HTML", "CSS", "JavaScript", "TypeScript", "Python", "Dart"],
   },
   {
-    category: "Frameworks & Libraries",
-    items: ["Next.js", "React", "Node.js", "Tailwind CSS"],
+    category: "Frameworks & Platforms",
+    items: ["Flutter", "Django", "Next.js", "Bootstrap"],
   },
   {
-    category: "Tools & Platforms",
-    items: ["Git", "Docker", "Vercel", "PostgreSQL"],
+    category: "Databases",
+    items: ["MongoDB", "MySQL"],
+  },
+  {
+    category: "Tools",
+    items: ["VS Code", "GitHub", "Postman", "Docker", "Figma", "Canva", "CapCut"],
+  },
+  {
+    category: "Microsoft Office",
+    items: ["Excel", "Word", "Teams"],
   },
 ];

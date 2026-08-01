@@ -39,6 +39,15 @@ generous whitespace, subtle accents only. Mobile-first, responsive.
 - The project should always be in a state where `npm run build` passes, so
   deploys stay smooth and predictable.
 
+## Responsive Design
+- Every layout/UI change must be checked at both mobile and desktop widths
+  before considering it done — use browser dev tools device toolbar or resize
+  the window (e.g. ~375px and ~1280px) to verify.
+- Use Tailwind's responsive prefixes (`sm:`, `md:`, `lg:`) for breakpoint-specific
+  adjustments; default (unprefixed) styles should target mobile first.
+- Watch for: text wrapping/overflow, nav/menu usability on small screens,
+  grid columns collapsing appropriately, and touch target sizing on mobile.
+
 ## Notes
 - No portfolio content (bio, project list, resume text) exists yet — will need
   to be gathered from the user before pages can be filled in.

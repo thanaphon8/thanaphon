@@ -3,28 +3,21 @@ export type Project = {
   description: string;
   tags: string[];
   href: string;
+  highlights?: string[];
 };
 
 export const projects: Project[] = [
   {
-    title: "Project One",
+    title: "Team Matching Application",
     description:
-      "A short description of this project — what it does, the problem it solves, and your role in building it.",
-    tags: ["Next.js", "TypeScript"],
-    href: "https://github.com/yourusername/project-one",
-  },
-  {
-    title: "Project Two",
-    description:
-      "A short description of this project — what it does, the problem it solves, and your role in building it.",
-    tags: ["React", "Node.js"],
-    href: "https://github.com/yourusername/project-two",
-  },
-  {
-    title: "Project Three",
-    description:
-      "A short description of this project — what it does, the problem it solves, and your role in building it.",
-    tags: ["Python", "PostgreSQL"],
-    href: "https://github.com/yourusername/project-three",
+      "A web application that helps educators form balanced student teams based on MBTI personality analysis, featuring quiz templates, automated team matching, and real-time room management.",
+    tags: ["TypeScript", "JavaScript", "CSS"],
+    href: "https://github.com/thanaphon8/FinalProject",
+    highlights: [
+      "Developed and built a web application",
+      "Designed and developed UI for all major pages including home, templates, question flow, team view, and result screens",
+      "Crafted interactive components such as buttons, cards, modals, and navigation with focus on usability and visual consistency",
+      "Ensured responsive design across desktop and mobile devices",
+    ],
   },
 ];

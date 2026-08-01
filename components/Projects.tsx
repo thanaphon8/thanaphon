@@ -21,6 +21,13 @@ export default function Projects() {
             <p className="text-sm leading-6 text-zinc-600 dark:text-zinc-400">
               {project.description}
             </p>
+            {project.highlights && (
+              <ul className="flex list-disc flex-col gap-1 pl-5 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                {project.highlights.map((highlight) => (
+                  <li key={highlight}>{highlight}</li>
+                ))}
+              </ul>
+            )}
             <div className="flex flex-wrap gap-2">
               {project.tags.map((tag) => (
                 <span
