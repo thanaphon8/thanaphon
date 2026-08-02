@@ -4,7 +4,7 @@ export default function Experience() {
   return (
     <section id="experience" className="flex scroll-mt-20 flex-col gap-6 border-t border-black/[.08] py-16 dark:border-white/[.145]">
       <h2 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
-        Experience & Education
+        Education
       </h2>
       <ol className="flex flex-col gap-8">
         {experience.map((entry) => (
