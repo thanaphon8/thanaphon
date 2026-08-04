@@ -14,7 +14,7 @@ export default function Projects() {
             href={project.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col gap-3 rounded-2xl border border-black/[.08] p-6 transition-colors hover:bg-black/[.02] dark:border-white/[.145] dark:hover:bg-white/[.04]"
+            className="flex flex-col gap-3 rounded-xl border border-black/[.08] p-6 transition-colors hover:bg-black/[.02] dark:border-white/[.145] dark:hover:bg-white/[.04]"
           >
             <h3 className="font-medium text-black dark:text-zinc-50">
               {project.title}
@@ -44,7 +44,7 @@ export default function Projects() {
                 {project.previewImages.map((src, index) => (
                   <div
                     key={src}
-                    className="relative aspect-[1920/952] overflow-hidden rounded-lg border border-black/[.08] dark:border-white/[.145]"
+                    className="relative aspect-[1920/952] overflow-hidden rounded-md border border-black/[.08] dark:border-white/[.145]"
                   >
                     <Image
                       src={src}
