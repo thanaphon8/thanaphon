@@ -5,6 +5,7 @@ export type Project = {
   description: string;
   tags: string[];
   href: string;
+  liveUrl?: string;
   highlights?: string[];
   previewImages?: ProjectPreviewImage[];
 };
@@ -16,6 +17,7 @@ export const projects: Project[] = [
       "A web application that helps educators form balanced student teams based on MBTI personality analysis, featuring quiz templates, automated team matching, and real-time room management.",
     tags: ["TypeScript", "JavaScript", "CSS"],
     href: "https://github.com/thanaphon8/FinalProject",
+    liveUrl: "https://persona-link-one.vercel.app/",
     previewImages: ["/img/bg1.png", "/img/bg2.png", "/img/bg3.png", "/img/bg4.png"],
     highlights: [
       "Developed and built a web application",
