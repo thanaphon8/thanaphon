@@ -3,24 +3,32 @@
 import { useState } from "react";
 import Image from "next/image";
 import ProjectLightbox from "./ProjectLightbox";
+import type { ProjectPreviewImage } from "@/data/projects";
 
 type ProjectPreviewGridProps = {
-  images: string[];
+  images: ProjectPreviewImage[];
   alt: string;
 };
 
+function normalize(image: ProjectPreviewImage) {
+  return typeof image === "string" ? { src: image, orientation: undefined } : image;
+}
+
 export default function ProjectPreviewGrid({ images, alt }: ProjectPreviewGridProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const normalized = images.map(normalize);
 
   return (
     <>
-      <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
-        {images.map((src, index) => (
+      <div className="mt-2 grid grid-cols-2 items-start gap-2 sm:grid-cols-4">
+        {normalized.map(({ src, orientation }, index) => (
           <button
             key={src}
             type="button"
             aria-label={`View ${alt} preview ${index + 1} full size`}
-            className="relative aspect-[1920/952] overflow-hidden rounded-md border border-black/[.08] dark:border-white/[.145]"
+            className={`relative overflow-hidden rounded-md border border-black/[.08] dark:border-white/[.145] ${
+              orientation === "portrait" ? "aspect-[9/16]" : "aspect-[1920/952]"
+            }`}
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
@@ -39,7 +47,7 @@ export default function ProjectPreviewGrid({ images, alt }: ProjectPreviewGridPr
 
       {openIndex !== null && (
         <ProjectLightbox
-          images={images}
+          images={normalized}
           alt={alt}
           index={openIndex}
           onClose={() => setOpenIndex(null)}

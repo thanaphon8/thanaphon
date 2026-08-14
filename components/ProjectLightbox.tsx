@@ -5,7 +5,7 @@ import { createPortal } from "react-dom";
 import Image from "next/image";
 
 type ProjectLightboxProps = {
-  images: string[];
+  images: { src: string; orientation?: "portrait" }[];
   alt: string;
   index: number;
   onClose: () => void;
@@ -104,9 +104,13 @@ export default function ProjectLightbox({
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        <div className="relative aspect-[1920/952] w-full">
+        <div
+          className={`relative ${
+            images[index].orientation === "portrait" ? "h-full aspect-[9/16]" : "w-full aspect-[1920/952]"
+          }`}
+        >
           <Image
-            src={images[index]}
+            src={images[index].src}
             alt={`${alt} preview ${index + 1}`}
             fill
             sizes="100vw"

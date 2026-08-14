@@ -1,10 +1,12 @@
+export type ProjectPreviewImage = string | { src: string; orientation?: "portrait" };
+
 export type Project = {
   title: string;
   description: string;
   tags: string[];
   href: string;
   highlights?: string[];
-  previewImages?: string[];
+  previewImages?: ProjectPreviewImage[];
 };
 
 export const projects: Project[] = [
@@ -45,6 +47,20 @@ export const projects: Project[] = [
     highlights: [
       "Goes beyond a single end-of-game WPM average by logging every word event (word, correct/incorrect, timestamp), so typing speed can be plotted as a graph over time",
       "Stores typing history and each user's personal best scores in MongoDB",
+    ],
+  },
+  {
+    title: "DRAPE — Clothing E-commerce Website",
+    description:
+      "Built the landing page for a clothing e-commerce brand using Next.js 16 (App Router), React 19, TypeScript, and Tailwind CSS v4, with a minimal, high-contrast visual direction inspired by Apple and Nike.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    href: "https://github.com/thanaphon8/DRAPE.git",
+    previewImages: ["/img/d1.png", "/img/d2.png"],
+    highlights: [
+      "Designed and built 7 reusable UI components (Header, Hero, CategoryGrid, FeatureSection, ProductGrid, Newsletter, Footer) with data cleanly separated from presentation for easy content updates",
+      "Implemented a full-bleed, auto-looping background video hero section with gradient overlays for readability",
+      "Delivered fully responsive layouts across desktop and mobile, including a mobile hamburger navigation menu and adaptive grid systems",
+      "Used Next.js Image optimization with per-breakpoint object-position tuning for consistent art direction across screen sizes",
     ],
   },
 ];
