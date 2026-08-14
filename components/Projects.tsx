@@ -18,7 +18,7 @@ export default function Projects() {
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute right-4 top-4 z-10 flex items-center gap-1 rounded-full border border-black/[.08] bg-white px-3 py-1 text-xs font-medium text-black transition-colors hover:bg-black/[.04] dark:border-white/[.145] dark:bg-black dark:text-zinc-50 dark:hover:bg-white/[.08]"
+                className="absolute right-4 top-4 z-0 flex items-center gap-1 rounded-full border border-black/[.08] bg-white px-3 py-1 text-xs font-medium text-black transition-colors hover:bg-black/[.04] dark:border-white/[.145] dark:bg-black dark:text-zinc-50 dark:hover:bg-white/[.08]"
               >
                 Open
                 <svg viewBox="0 0 24 24" className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth={2}>
