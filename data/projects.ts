@@ -63,4 +63,18 @@ export const projects: Project[] = [
       "Used Next.js Image optimization with per-breakpoint object-position tuning for consistent art direction across screen sizes",
     ],
   },
+  {
+    title: "SingFinder",
+    description:
+      "A web application designed to help users identify songs when they only remember partial lyrics or melody. Users can simply click the microphone button to hum or sing remembered lyrics, or type text snippets into the search bar. The app retrieves and displays a list of closest matching songs.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    href: "https://github.com/thanaphon8/SingFinder.git",
+    previewImages: ["/img/s1.png", "/img/s2.png", "/img/s3.png", "/img/s4.png"],
+    highlights: [
+      "Designed and built the UX/UI for key interactive features including voice input, search, and result displays",
+      "Developed full-stack features to handle voice recognition and lyric-based search queries",
+      "Implemented fuzzy text search and audio recognition logic to return top relevant song matches",
+      "Ensured responsive design and smooth interactive components across desktop and mobile devices",
+    ],
+  },
 ];
