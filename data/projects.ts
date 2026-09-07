@@ -40,18 +40,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Typing Speed Test",
-    description:
-      "A typing speed test website with support for both English and Thai, including a word bank and hard-mode sentences in each language. The whole app uses a consistent Game Boy-inspired green color theme.",
-    tags: ["TypeScript", "MongoDB"],
-    href: "https://github.com/thanaphon8/Typing-Project.git",
-    previewImages: ["/img/31.png", "/img/32.png", "/img/33.png"],
-    highlights: [
-      "Goes beyond a single end-of-game WPM average by logging every word event (word, correct/incorrect, timestamp), so typing speed can be plotted as a graph over time",
-      "Stores typing history and each user's personal best scores in MongoDB",
-    ],
-  },
-  {
     title: "DRAPE — Clothing E-commerce Website",
     description:
       "Built the landing page for a clothing e-commerce brand using Next.js 16 (App Router), React 19, TypeScript, and Tailwind CSS v4, with a minimal, high-contrast visual direction inspired by Apple and Nike.",
@@ -77,6 +65,18 @@ export const projects: Project[] = [
       "Developed full-stack features to handle voice recognition and lyric-based search queries",
       "Implemented fuzzy text search and audio recognition logic to return top relevant song matches",
       "Ensured responsive design and smooth interactive components across desktop and mobile devices",
+    ],
+  },
+  {
+    title: "Typing Speed Test",
+    description:
+      "A typing speed test website with support for both English and Thai, including a word bank and hard-mode sentences in each language. The whole app uses a consistent Game Boy-inspired green color theme.",
+    tags: ["TypeScript", "MongoDB"],
+    href: "https://github.com/thanaphon8/Typing-Project.git",
+    previewImages: ["/img/31.png", "/img/32.png", "/img/33.png"],
+    highlights: [
+      "Goes beyond a single end-of-game WPM average by logging every word event (word, correct/incorrect, timestamp), so typing speed can be plotted as a graph over time",
+      "Stores typing history and each user's personal best scores in MongoDB",
     ],
   },
 ];
