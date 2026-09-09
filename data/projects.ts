@@ -58,7 +58,7 @@ export const projects: Project[] = [
     description:
       "A web application designed to help users identify songs when they only remember partial lyrics or melody. Users can simply click the microphone button to hum or sing remembered lyrics, or type text snippets into the search bar. The app retrieves and displays a list of closest matching songs.",
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    href: "https://github.com/thanaphon8/SingFinder.git",
+    href: "https://github.com/Oatto319/SingFinder.git",
     previewImages: ["/img/s1.png", "/img/s2.png", "/img/s3.png", "/img/s4.png"],
     highlights: [
       "Designed and built the UX/UI for key interactive features including voice input, search, and result displays",
