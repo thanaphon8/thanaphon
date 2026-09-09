@@ -1,6 +1,7 @@
 export type SkillCategory = {
   category: string;
   items: string[];
+  image?: string;
 };
 
 export const skills: SkillCategory[] = [
@@ -23,5 +24,10 @@ export const skills: SkillCategory[] = [
   {
     category: "Microsoft Office",
     items: ["Excel", "Word", "Teams"],
+  },
+  {
+    category: "Typing Performance",
+    items: ["122 WPM / 98% Accuracy (Monkeytype)"],
+    image: "/img/typing.png",
   },
 ];
