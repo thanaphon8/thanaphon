@@ -79,4 +79,20 @@ export const projects: Project[] = [
       "Stores typing history and each user's personal best scores in MongoDB",
     ],
   },
+  {
+    title: "Chai Rai Wa: Expense Tracker",
+    description:
+      "A mobile-first web app for tracking daily income and expenses. Log a transaction in seconds with categories, quick-note presets, and receipt photos, then see your balance, spending trends, and an estimate of how many days your money will last.",
+    tags: ["TypeScript", "JavaScript" ,"CSS"],
+    href: "https://github.com/thanaphon8/Typing-Project.git",
+    previewImages: ["/img/chai1.png", "/img/chai2.png", "/img/chai3.png", "/img/chai4.png"],
+    highlights: [
+      "Designed and built this full-stack app end to end, from UX/UI to front-end and back-end",
+      "Built a slide-to-save entry flow with category picker, quick-note presets, and client-side receipt image compression",
+      "Used Google Sheets as the database and Google Drive for receipt storage through a Google Apps Script API, so it runs with no server cost.",
+      "Built a dashboard with net balance, spending ratio, and a runway estimate based on average daily spend",
+      "Built a searchable, filterable history grouped by day with daily totals and a receipt image viewer",
+      "Delivered a responsive UI with separate layouts for mobile and desktop",
+    ],
+  },
 ];
