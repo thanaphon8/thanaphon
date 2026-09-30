@@ -70,7 +70,7 @@ export const projects: Project[] = [
     description:
       "A typing speed test website with support for both English and Thai, including a word bank and hard-mode sentences in each language. The whole app uses a consistent Game Boy-inspired green color theme.",
     tags: ["TypeScript", "MongoDB"],
-    href: "https://github.com/thanaphon8/Typing-Project.git",
+    href: "https://github.com/thanaphon8/chairaiwa.git",
     previewImages: ["/img/31.png", "/img/32.png", "/img/33.png"],
     highlights: [
       "Goes beyond a single end-of-game WPM average by logging every word event (word, correct/incorrect, timestamp), so typing speed can be plotted as a graph over time",
