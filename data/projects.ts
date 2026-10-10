@@ -82,7 +82,7 @@ export const projects: Project[] = [
     description:
       "A mobile-first web app for tracking daily income and expenses. Log a transaction in seconds with categories, quick-note presets, and receipt photos, then see your balance, spending trends, and an estimate of how many days your money will last.",
     tags: ["TypeScript", "JavaScript" ,"CSS"],
-    href: "https://github.com/thanaphon8/Typing-Project.git",
+    href: "https://github.com/thanaphon8/chairaiwa.git",
     previewImages: ["/img/chai1.png", "/img/chai2.png", "/img/chai3.png", "/img/chai4.png"],
     highlights: [
       "Designed and built this full-stack app end to end, from UX/UI to front-end and back-end",
