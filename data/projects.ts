@@ -117,7 +117,7 @@ export const projects: Project[] = [
     "A web app that helps organizations issue vehicle agreement documents quickly and accurately. Fill in employee and car details in a form, watch a real A4 document update live, then export to PDF or print in one click. Output matches the original Word file.",
   tags: ["TypeScript", "React", "Next.js", "CSS"],
   href: "https://github.com/thanaphon8/DocFill.git",
-  previewImages: ["/img/aion1.png", "/img/aion2.png", "/img/aion3.png", "/img/aion4.png"],
+  previewImages: ["/img/com7page.png", "/img/ufun.png", "/img/snh.png"],
   highlights: [
     "Designed and built the UX/UI for the form and live A4 preview, with click-to-edit directly on the document and a blinking caret that follows the active field",
     "Built a multi-page layout engine using CSS columns and real units (mm/pt), so screen, preview, and PDF output stay identical, including Thai line breaking",
