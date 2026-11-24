@@ -1,16 +1,21 @@
+"use client";
+
 import { profile } from "@/data/profile";
+import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Contact() {
+  const { lang, t } = useLanguage();
+
   return (
     <section
       id="contact"
       className="flex scroll-mt-20 flex-col gap-6 border-t border-black/[.08] py-16 dark:border-white/[.145]"
     >
       <h2 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
-        Contact
+        {t.nav.contact}
       </h2>
       <p className="text-zinc-600 dark:text-zinc-400">
-        {profile.location} — feel free to reach out.
+        {profile.location[lang]} — {t.contactNote}
       </p>
       <div className="flex flex-wrap gap-4 text-base font-medium">
         <a

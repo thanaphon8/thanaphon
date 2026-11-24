@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { profile } from "@/data/profile";
+import { useLanguage } from "@/components/LanguageProvider";
 
 function renderWithHighlights(text: string, highlights: string[]) {
   const pattern = new RegExp(
@@ -21,6 +24,8 @@ function renderWithHighlights(text: string, highlights: string[]) {
 }
 
 export default function Hero() {
+  const { lang } = useLanguage();
+
   return (
     <section
       id="about"
@@ -38,14 +43,14 @@ export default function Hero() {
           {profile.name}
         </h1>
         <p className="mt-1 text-lg text-zinc-600 dark:text-zinc-400">
-          {profile.role}
+          {profile.role[lang]}
         </p>
       </div>
       <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-        {profile.tagline}
+        {profile.tagline[lang]}
       </p>
       <p className="max-w-xl text-left leading-7 text-zinc-600 dark:text-zinc-400">
-        {renderWithHighlights(profile.bio, profile.bioHighlights)}
+        {renderWithHighlights(profile.bio[lang], profile.bioHighlights[lang])}
       </p>
     </section>
   );

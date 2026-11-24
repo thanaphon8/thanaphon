@@ -1,15 +1,29 @@
+import type { Localized } from "@/components/LanguageProvider";
+
 export type ExperienceEntry = {
-  role: string;
-  org: string;
-  period: string;
-  description: string;
+  role: Localized<string>;
+  org: Localized<string>;
+  period: Localized<string>;
+  description: Localized<string>;
 };
 
 export const experience: ExperienceEntry[] = [
   {
-    role: "B.Sc. Computer Science",
-    org: "Sisaket Rajabhat University",
-    period: "2023 — Present",
-    description: "Faculty of Liberal Arts and Science · Sisaket, Thailand",
+    role: {
+      en: "B.Sc. Computer Science",
+      th: "วิทยาศาสตรบัณฑิต สาขาวิทยาการคอมพิวเตอร์",
+    },
+    org: {
+      en: "Sisaket Rajabhat University",
+      th: "มหาวิทยาลัยราชภัฏศรีสะเกษ",
+    },
+    period: {
+      en: "2023 — Present",
+      th: "2566 — ปัจจุบัน",
+    },
+    description: {
+      en: "Faculty of Liberal Arts and Science · Sisaket, Thailand",
+      th: "คณะศิลปศาสตร์และวิทยาศาสตร์ · ศรีสะเกษ ประเทศไทย",
+    },
   },
 ];
